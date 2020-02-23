@@ -12,6 +12,7 @@ import android.widget.ListView;
 import com.unnamed.b.atv.sample.R;
 import com.unnamed.b.atv.sample.fragment.CustomViewHolderFragment;
 import com.unnamed.b.atv.sample.fragment.FolderStructureFragment;
+import com.unnamed.b.atv.sample.fragment.JsonFolderStructureFragment;
 import com.unnamed.b.atv.sample.fragment.SelectableTreeFragment;
 import com.unnamed.b.atv.sample.fragment.TwoDScrollingArrowExpandFragment;
 import com.unnamed.b.atv.sample.fragment.TwoDScrollingFragment;
@@ -31,6 +32,7 @@ public class MainActivity extends ActionBarActivity {
 
 
         final LinkedHashMap<String, Class<?>> listItems = new LinkedHashMap<>();
+        listItems.put("Json Folder Structure Example", JsonFolderStructureFragment.class);
         listItems.put("Folder Structure Example", FolderStructureFragment.class);
         listItems.put("Custom Holder Example", CustomViewHolderFragment.class);
         listItems.put("Selectable Nodes", SelectableTreeFragment.class);
@@ -65,4 +67,5 @@ public class MainActivity extends ActionBarActivity {
             return position;
         }
     }
+
 }

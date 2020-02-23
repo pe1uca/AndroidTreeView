@@ -62,6 +62,15 @@
             app:iconFont="fonts/material-icon-font.ttf"
             app:iconText="@string/ic_add" />
 
+        <com.github.johnkil.print.PrintView
+            android:id="@+id/btn_addImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            app:iconSize="20dp"
+            app:iconColor="#99cc00"
+            app:iconFont="fonts/material-icon-font.ttf"
+            app:iconText="@string/ic_camera_roll" />
 
         <com.github.johnkil.print.PrintView
             android:padding="5dp"

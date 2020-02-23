@@ -2,11 +2,26 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
+        android:id="@+id/collapseAll"
+        android:title="CollapseAll"
+        app:showAsAction="never" />
+    <item
         android:id="@+id/expandAll"
         app:showAsAction="never"
         android:title="ExpandAll" />
     <item
-        app:showAsAction="never"
-        android:id="@+id/collapseAll"
-        android:title="CollapseAll" />
+        android:id="@+id/saveJson"
+        android:enabled="false"
+        android:title="Save as JSON"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/loadJson"
+        android:enabled="false"
+        android:title="Load from JSON"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/clearJson"
+        android:enabled="false"
+        android:title="Clear JSON"
+        app:showAsAction="never" />
 </menu>
