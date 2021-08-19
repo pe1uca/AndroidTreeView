@@ -1,6 +1,5 @@
 package com.unnamed.b.atv.sample.fragment;
 
-import android.app.Fragment;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.LayoutInflater;
@@ -11,6 +10,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.fragment.app.Fragment;
 
 import com.unnamed.b.atv.model.TreeNode;
 import com.unnamed.b.atv.sample.R;
