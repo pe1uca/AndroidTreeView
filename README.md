@@ -1,6 +1,26 @@
 AndroidTreeView
 ====================
 
+[![Release](https://jitpack.io/v/pe1uca/AndroidTreeView.svg)](https://jitpack.io/#pe1uca/AndroidTreeView)
+
+This is a fork of the original [AndroidTreeView](https://github.com/bmelnychuk/AndroidTreeView) library provided by [Bogdan Melnychuk](https://github.com/bmelnychuk).
+
+Compared to the original library, some of the pull requests to the original library have been merged into this version.
+
+This fork can be used in your build files thanks to jitpack.io. You have to add these lines in your `build.gradle` file:
+
+ ```java
+repositories {
+  maven { url "https://jitpack.io" }
+}
+
+dependencies {
+  implementation 'com.github.pe1uca:AndroidTreeView:v1.0.0'
+}
+ ```
+
+## Original readme
+
 ### Recent changes
 
 
