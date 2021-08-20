@@ -158,14 +158,6 @@ public class AndroidTreeView {
         }
     }
 
-    public void expandNode(TreeNode node) {
-        expandNode(node, false);
-    }
-
-    public void collapseNode(TreeNode node) {
-        collapseNode(node, false);
-    }
-
     public String getSaveState() {
         final StringBuilder builder = new StringBuilder();
         getSaveState(mRoot, builder);
@@ -187,7 +179,7 @@ public class AndroidTreeView {
     private void restoreNodeState(TreeNode node, Set<String> openNodes) {
         for (TreeNode n : node.getChildren()) {
             if (openNodes.contains(n.getPath())) {
-                expandNode(n);
+                expandNode(n, false);
                 restoreNodeState(n, openNodes);
             }
         }
@@ -212,7 +204,7 @@ public class AndroidTreeView {
 
     }
 
-    private void collapseNode(TreeNode node, final boolean includeSubnodes) {
+    public void collapseNode(TreeNode node, final boolean includeSubnodes) {
         node.setExpanded(false);
         TreeNode.BaseNodeViewHolder nodeViewHolder = getViewHolderForNode(node);
 
@@ -229,7 +221,7 @@ public class AndroidTreeView {
         }
     }
 
-    private void expandNode(final TreeNode node, boolean includeSubnodes) {
+    public void expandNode(final TreeNode node, boolean includeSubnodes) {
         node.setExpanded(true);
         final TreeNode.BaseNodeViewHolder parentViewHolder = getViewHolderForNode(node);
         parentViewHolder.getNodeItemsView().removeAllViews();
